@@ -11,9 +11,12 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# loading the saved models
-diabetes_model = pickle.load(open('/Volumes/APPLE SD/Mini Project/diabetes_model.sav', 'rb'))
-heart_disease_model = pickle.load(open('/Volumes/APPLE SD/Mini Project/heart_disease_model.sav', 'rb'))
+# loading the saved models absolute path and relative path
+# diabetes_model = pickle.load(open('/Volumes/APPLE SD/Mini Project/diabetes_model.sav', 'rb'))
+diabetes_model = pickle.load(open('diabetes_model.sav', 'rb'))
+# heart_disease_model = pickle.load(open('/Volumes/APPLE SD/Mini Project/heart_disease_model.sav', 'rb'))
+heart_model = pickle.load(open('heart_disease_model.sav', 'rb'))
+
 # Custom CSS for professional styling
 st.markdown("""
     <style>
